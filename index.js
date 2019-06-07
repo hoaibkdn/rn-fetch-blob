@@ -556,7 +556,10 @@ export default {
   fetch,
   base64,
   android,
-  ios,
+  ios: {			
+    ...ios,
+    cacheExistDownloadsIfNeeded: RNFetchBlob.cacheExistDownloadsIfNeeded
+  },
   config,
   session,
   fs,
